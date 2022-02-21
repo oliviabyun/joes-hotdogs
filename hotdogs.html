@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <h1>Joe's Hotdogs</h1>
+        <h1>Joe's Hotdogs</h1><br>
         <h2>Est. 1985</h2>
 
         <img src="hotdog.jpg" width="300">
@@ -16,22 +16,22 @@
             numHotdogs = prompt("How many hotdogs do you want?", "");
             numFries = prompt("How many orders of fries do you want?", "");
             numSodas = prompt("How many sodas would you like?", "");
-
-            //document.write("Thanks for ordering from Joe's Hotdogs!<br>");
             
             //calculate costs of each item
             pHotdogs = parseFloat(numHotdogs) * 3.75;
             pFries = parseFloat(numFries) * 2.00;
             pSodas = parseFloat(numSodas) * 1.80;
 
-            //display order + cost of each item
-            document.write(numHotdogs + " qty Hotdogs: $" + pHotdogs + "<br>");
-            document.write(numFries + " qty Fries: $" + pFries + "<br>");
-            document.write(numSodas + " qty Sodas: $" + pSodas + "<br>");
-
-            //calculate and display subtotal
+            //calculate subtotal
             subtotal = pHotdogs + pFries + pSodas;
             subtotal = subtotal.toFixed(2);
+
+            //display order + cost of each item
+            document.write(numHotdogs + " qty Hotdogs: $" + pHotdogs.toFixed(2) + "<br>");
+            document.write(numFries + " qty Fries: $" + pFries.toFixed(2) + "<br>");
+            document.write(numSodas + " qty Sodas: $" + pSodas.toFixed(2) + "<br>");
+
+            //display subtotal
             document.write("Subtotal: $" + subtotal + "<br>");
             subtotal = parseFloat(subtotal);
         
