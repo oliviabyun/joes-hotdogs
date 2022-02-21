@@ -12,12 +12,6 @@ img {
     padding-bottom: 10px;
 }
 
-h1 {
+h1, h2 {
     display: inline;
-    padding: -10px;
-}
-
-h2 {
-    display: block;
-    padding: -10px;
 }
